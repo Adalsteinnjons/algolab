@@ -2,6 +2,8 @@
 ## POW: Deck of Cards (simplified)
 Input: n, k, and n non-negative integers v0, v1, ..., vn-1  
 Output: a pair (i,j) such that sum of the intervall from i to j is equal to k.  
+
+
 ![](http://i.imgur.com/x7TBvUT.png)  
 How can we solve it in O(n)?  
 With partial sums it would be O(n^2)  
@@ -36,7 +38,9 @@ This is called Top-Down DP or Memoization. Time Complexity O(n).
 ### Rod Cutting  
 Input: a metal rod of length n   
 values p1, ..., pn denotes the price for a rod of length i.   
-Output: Maximal cost of a rod of length n.
+Output: Maximal cost of a rod of length n.  
+
+
 ![Rod cutting example](http://i.imgur.com/PDnz9JH.png)  
 Recursive Algorithm to get the best partition. We want a piece containing the left end + a partition of the rest. So we ask what is the most valuable partition.  
  Either we take pn (don't cut anything) or we take a partition. So the function is:  
@@ -88,6 +92,8 @@ Input: n amount of numbers a1, ... an
 Output: Length of the longest increasing subsequence  
 Example: **2** 4 **3** 7 **4 5**  
 Result: 4  
+
+
 ![](http://i.imgur.com/myqFWrG.png)  
 ### Top Down vs Bottom Up
 Top - down | Bottom Up
